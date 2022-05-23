@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://sakibulalikhan.github.io/blog/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://sakibulalikhan.github.io/blog/</loc>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/advanced-searching-for-osint.html</loc>
+<lastmod>2022-01-12T13:30:49+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/8/Advanced-Searching.jpg</image:loc>
+<image:title><![CDATA[ Advanced Searching]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/exploiting-wildcard-for-privilege-escalation.html</loc>
+<lastmod>2022-01-10T21:26:38+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/6/prev-2.jpeg</image:loc>
+<image:title><![CDATA[Wildcard for Privilege Escalation]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/6/prev.jpeg</image:loc>
+<image:title><![CDATA[Wildcard for Privilege Escalation]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/how-to-use-recon-ng.html</loc>
+<lastmod>2022-01-12T21:19:49+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/9/recon-ng.png</image:loc>
+<image:title><![CDATA[recon-ng]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/9/recon-ng-2.png</image:loc>
+<image:title><![CDATA[recon-ng]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/learn-basic-commands-for-linux.html</loc>
+<lastmod>2021-11-16T23:01:04+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/3/Linux.jpeg</image:loc>
+<image:title><![CDATA[Linux]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/learn-intermidiate-commands-for-linux.html</loc>
+<lastmod>2021-11-16T23:03:51+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/4/Linux-Termial.jpeg</image:loc>
+<image:title><![CDATA[Linux Terminal]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/4/Linux-Termial-2.jpeg</image:loc>
+<image:title><![CDATA[Linux Terminal]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/page/2/</loc>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/page/3/</loc>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/some-linux-tips-and-tricks.html</loc>
+<lastmod>2021-11-21T11:26:36+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/5/index.jpeg</image:loc>
+<image:title><![CDATA[linux tips and tricks]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/5/linuxtipsandtricks-2.jpeg</image:loc>
+<image:title><![CDATA[Linux Tips And Tricks]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/specialized-search-engines-for-osint.html</loc>
+<lastmod>2022-01-12T21:18:59+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/7/Red-Team-Recon.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/sql-injection-cheat-sheet.html</loc>
+<lastmod>2022-01-22T12:24:04+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/11/sql-injection.svg</image:loc>
+<image:title><![CDATA[SQL injection cheat sheet]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/11/second-order-sql-injection.svg</image:loc>
+<image:title><![CDATA[What is SQL injection]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/windows-file-system-and-basic-commands.html</loc>
+<lastmod>2021-11-16T23:02:48+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/1/windowsfile.png</image:loc>
+<image:title><![CDATA[windows file]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/1/windowsfile-2.png</image:loc>
+<image:title><![CDATA[Windows File Manager]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://sakibulalikhan.github.io/blog/windows-system-and-networking-commands.html</loc>
+<lastmod>2021-11-16T23:02:14+06:00</lastmod>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/2/powershell.png</image:loc>
+<image:title><![CDATA[powershell]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://sakibulalikhan.github.io/blog/media/posts/2/powershell-2.png</image:loc>
+<image:title><![CDATA[Windows PowerShell]]></image:title>
+</image:image>
+</url>
+</urlset>

@@ -1,0 +1,582 @@
+<!doctype html><html amp lang="en-us"><head><meta charset="utf-8"><title>Learn basic commands for Linux - Sakibul Ali Khan</title><meta name="description" content="What Is Linux? Linux is an operating system's kernel. You might have heard of UNIX. Well, Linux is a UNIX clone. But it&hellip;"><link rel="canonical" href="https://sakibulalikhan.github.io/blog/learn-basic-commands-for-linux.html"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" type="text/css"><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sakibulalikhan.github.io/blog/amp/learn-basic-commands-for-linux.html"},"headline":"Learn basic commands for Linux","datePublished":"2021-11-16T22:47","dateModified":"2021-11-16T23:01","image":{"@type":"ImageObject","url":"https://sakibulalikhan.github.io/blog/media/posts/3/Linux.jpeg","height":300,"width":248},"description":"What Is Linux? Linux is an operating system's kernel. You might have heard of UNIX. Well, Linux is a UNIX clone. But it&hellip;","author":{"@type":"Person","name":"Sakibul Ali Khan","url":"https://sakibulalikhan.github.io/blog/amp/authors/sakibul-ali-khan/"},"publisher":{"@type":"Organization","name":"Sakibul Ali Khan"}}</script><style amp-custom>article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+amp-img {
+  max-width: 100%; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  background: #f1f1f1;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color:  #039be5;
+  text-decoration: none;
+  -webkit-transition: all 0.12s linear 0s;
+  -o-transition: all 0.12s linear 0s;
+  transition: all 0.12s linear 0s; }
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
+
+a:active {
+  color: #262626; }
+
+a:focus {
+  outline: 2px dotted #039be5; }
+
+figure,
+blockquote,
+p,
+ul,
+ol,
+dl,
+table,
+hr,
+fieldset {
+  margin-top: 1.6rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.13333rem; }
+
+h1 {
+  font-size: 1.67583rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4729rem; }
+
+h3 {
+  font-size: 1.29454rem; }
+
+h4 {
+  font-size: 1.13778rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.87891rem; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.8rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+  color: #6c7175;
+  font-family: "Droid Serif", "Times", "Source Serif Pro", serif;
+  font-style: italic;
+  padding: 1.33333rem 0.53333rem 1.33333rem 3.2rem;
+  position: relative; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 4.41226rem;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: rgba(108, 113, 117, 0.5); }
+  blockquote > :nth-child(1) {
+    margin-top: 0; }
+
+ul,
+ol {
+  margin-left: 2rem; }
+  ul > li,
+  ol > li {
+    list-style: inherit;
+    padding: 0 0 0.26667rem 0.26667rem; }
+
+dl dt {
+  color: #262626;
+  font-weight: 600; }
+
+code,
+pre {
+  background-color: #f1f1f1;
+  font-family: monospace; }
+
+pre {
+  margin: 1.6rem 0 0;
+  padding: 1.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto; }
+  pre > code {
+    color: #262626;
+    padding: 0; }
+
+code {
+  border-radius: 3px;
+  color: #262626;
+  padding: 0.26667rem 0.53333rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap; }
+  table th {
+    font-weight: 500;
+    padding: 0.53333rem 1.06667rem; }
+  table tr {
+    border-bottom: 1px solid #d4d4d4; }
+    table tr:nth-child(2n) {
+      background: #f1f1f1; }
+  table td {
+    padding: 0.53333rem 1.06667rem; }
+
+figcaption {
+  clear: both;
+  color: rgba(108, 113, 117, 0.6);
+  font-size: 0.82397rem;
+  margin: 0.8rem 0 0;
+  text-align: center; }
+
+sub,
+sup {
+  font-size: 65%; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.btn, [type=button],
+[type=submit],
+button {
+  background: #039be5;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.87891rem;
+  font-weight: 500;
+  line-height: 1.9;
+  padding: 0.53333rem 1.33333rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  width: auto; }
+  .btn:hover, [type=button]:hover,
+  [type=submit]:hover,
+  button:hover {
+    background: #262626;
+    color: #ffffff; }
+  .btn:focus, [type=button]:focus,
+  [type=submit]:focus,
+  button:focus {
+    outline: none; }
+  .btn-outline {
+    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #262626; }
+
+[type=button],
+[type=submit],
+button {
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.navbar {
+  background: #039be5;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3;
+  max-height: 4rem; }
+  .navbar > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navbar-sidebar-toggle {
+    left: 0;
+    position: relative;
+    text-indent: -99999rem; }
+    .navbar-sidebar-toggle:before {
+      content: "";
+      display: block;
+      border-top: 0.375rem double #ffffff;
+      border-bottom: 0.125rem solid #ffffff;
+      height: 0.125rem;
+      position: absolute;
+      text-indent: 0;
+      top: 50%;
+      width: 1.3rem;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
+
+.logo {
+            display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+            margin: 0 auto;
+            height: 2rem;
+            text-indent: -9999px;
+            width: 240px;vertical-align: middle;
+        }
+        .logo.logo-text {
+            line-height: 2;
+            text-align: center;
+            text-indent: 0;
+        }
+
+amp-sidebar {
+  background: #ffffff;
+  width: 240px; }
+  amp-sidebar > ul {
+    margin: 0.8rem 0 0;
+    padding: 0; }
+    amp-sidebar > ul ul {
+      border-left: 1px solid #d4d4d4;
+      margin: 0.53333rem 0 0; }
+    amp-sidebar > ul li {
+      color: #262626;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      padding: 0.42667rem 1.06667rem; }
+      amp-sidebar > ul li li {
+        font-weight: normal;
+        padding: 0.26667rem 0 0.26667rem 1.06667rem; }
+    amp-sidebar > ul a,
+    amp-sidebar > ul a:visited {
+      color: #262626; }
+
+.bg-white {
+  background: #ffffff; }
+
+.wrap-page {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media all and (max-width: 43.6875em) {
+  .wrap-inner {
+    padding: 0 6%; } }
+
+.page-title {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding: 1.6rem 6%; }
+  .page-title > h1 {
+    margin: 0;
+    font-size: 1.29454rem; }
+  .page-title > p {
+    font-size: 0.87891rem;
+    color: #6c7175;
+    line-height: 1.3;
+    margin: 0.26667rem 0 0; }
+  .page-title-author {
+    border-radius: 50%;
+    float: left;
+    height: 2.5rem;
+    width: 2.5rem; }
+    .page-title-author + h1 {
+      margin-left: 3.5rem; }
+      .page-title-author + h1 + p {
+        margin-left: 3.5rem; }
+
+.card {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.06667rem; }
+
+  .card-meta {
+    border-top: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-top: 1.06667rem;
+    text-transform: uppercase; }
+    .card-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .card-text {
+    font-size: 0.9375rem;
+    overflow: hidden;
+    padding: 0 6%; }
+    .card-text h2 {
+      font-size: 1.13778rem; }
+
+.post {
+  margin-bottom: 2.13333rem; }
+  .post-featured-image {
+    margin-top: 0;
+    position: relative; }
+    .post-featured-image > figcaption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0.8rem;
+      padding: 0 0.26667rem;
+      right: 6%; }
+  .post-header {
+    margin-bottom: 2.13333rem; }
+  .post-meta {
+    border-bottom: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-bottom: 1.06667rem;
+    text-transform: uppercase; }
+    .post-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .post-tag {
+    margin: 0; }
+    .post-tag > li {
+      display: inline-block;
+      padding: 0; }
+      .post-tag > li a {
+        background: #f1f1f1;
+        border-radius: 2px;
+        color: #6c7175;
+        font-size: 0.77248rem;
+        display: inline-block;
+        margin: 0 0.26667rem 0.26667rem 0;
+        padding: 0.26667rem 0.53333rem; }
+        .post-tag > li a:hover {
+          background: #039be5;
+          color: #ffffff;
+          text-decoration: none; }
+  .post-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    width: 100%; }
+    .post-share amp-social-share {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      background-size: 24px; }
+  .post-scroll {
+    color: #ffffff;
+    background: #039be5;
+    bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    font-size: 1.13778rem;
+    height: 46px;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    padding: 0;
+    right: 4%;
+    visibility: hidden;
+    width: 46px;
+    z-index: 9999; }
+    .post-scroll-marker {
+      height: 0px;
+      position: absolute;
+      top: 100px;
+      width: 0px; }
+        .post-pagination {
+    background: #f1f1f1;
+    -webkit-box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    border-top: 1px solid #d4d4d4;
+    padding: 1.06667rem 0; }
+    .post-pagination > div {
+      line-height: 1.2;
+      padding: 0.53333rem 1.06667rem;
+      text-align: center; }
+      .post-pagination > div span {
+        display: block;
+        color: #6c7175;
+        font-size: 0.7242rem;
+        font-weight: 500;
+        margin-bottom: 0.26667rem;
+        text-transform: uppercase; }
+    .post-pagination-prev a:before {
+      content: "\2190";
+      margin-right: 0.26667rem; }
+    .post-pagination-next a:after {
+      content: "\2192";
+      margin-left: 0.26667rem; }
+
+aside {
+  margin: 1.6rem 0 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-justify {
+  text-align: justify; }
+
+.msg {
+  border-left: 2px solid transparent;
+  padding: 1.06667rem 1.06667rem; }
+  .msg--highlight {
+    background-color: #fff8e6;
+    border-color: #e2ac4f; }
+  .msg--info {
+    background: rgba(45, 97, 201, 0.03);
+    border-color: #039be5; }
+  .msg--success {
+    background: #f7fbf6;
+    border-color: #5ab44b; }
+  .msg--warning {
+    background: #fff3f3;
+    border-color: #c06367;
+    color: #a94442; }
+
+.dropcap:first-letter {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.16943rem;
+  line-height: 0.7;
+  margin-right: 0.53333rem;
+  padding: 0.53333rem 0.53333rem 0.53333rem 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8rem 0; }
+  .pagination > a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+  .pagination-right {
+    margin-left: auto; }
+
+.bottom {
+  background: #039be5;
+  color: #ffffff;
+  padding: 1.06667rem 4%;
+  text-align: center; }</style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async></script><script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async></script></head><body class="bg-white"><nav class="navbar wrap-inner" id="top"><div><a on="tap:navbar-sidebar.toggle" class="navbar-sidebar-toggle" title="Menu">Menu</a> <a class="logo logo-text" href="https://sakibulalikhan.github.io/blog/amp/">Sakibul Ali Khan</a></div></nav><main class="wrap-page"><article class="post"><figure class="post-featured-image"><amp-img src="https://sakibulalikhan.github.io/blog/media/posts/3/Linux.jpeg" alt="Linux" srcset="https://sakibulalikhan.github.io/blog/media/posts/3/responsive/Linux-xs.jpeg 300w ,https://sakibulalikhan.github.io/blog/media/posts/3/responsive/Linux-sm.jpeg 480w ,https://sakibulalikhan.github.io/blog/media/posts/3/responsive/Linux-md.jpeg 768w" sizes="(max-width: 768px) 100vw, 768px" height="300" layout="responsive" width="248"></amp-img></figure><div class="wrap-inner"><header class="post-header"><h1>Learn basic commands for Linux</h1><p class="post-meta"><time datetime="2021-11-16T22:47">November 16, 2021</time></p></header><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><h3><i><strong>What Is Linux?</strong></i></h3></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/vDDbslT/vDDbslTDGt8itE6C6f8K3X8FPFQenq5iOl1ZfW8z.jpeg" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>Linux is an operating system's kernel. You might have heard of UNIX. Well, Linux is a UNIX clone. But it was actually created by Linus Torvalds from Scratch. Linux is free and open-source, that means that you can simply change anything in Linux and redistribute it in your own name! There are several Linux Distributions, commonly called “distros”.</p><ul><li>Ubuntu Linux</li><li>Red Hat Enterprise Linux</li><li>Linux Mint</li><li>Debian</li><li>Fedora</li></ul><p>Linux is Mainly used in servers. About 90% of the internet is powered by Linux servers. This is because Linux is fast, secure, and free! The main problem of using Windows servers are their cost. This is solved by using Linux servers. The OS that runs in about 80% of the smartphones in the world, Android, is also made from the Linux kernel. Most of the viruses in the world run on Windows, but not on Linux!</p><h3><i><strong>Linux Shell or “Terminal”<br><br></strong></i></h3><p>So, basically, a shell is a program that receives commands from the user and gives it to the OS to process, and it shows the output. Linux's shell is its main part. Its distros come in GUI (graphical user interface), but basically, Linux has a CLI (command line interface). In this tutorial, we are going to cover the basic commands that we use in the shell of Linux.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/CgR0cNL/CgR0cNLK77aJYQHyxQYBKNy1mUv1FN5vBEeGCerZ.jpeg" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>To open the terminal, press Ctrl+Alt+T in Ubuntu, or press Alt+F2, type in gnome-terminal, and press enter. In Raspberry Pi, type in lxterminal. There is also a GUI way of taking it, but this is better!</p><h3><i><strong>Linux Commands<br><br></strong></i></h3><p><strong>Basic Commands</strong></p><p><strong>1. pwd</strong> — When you first open the terminal, you are in the home directory of your user. To know which directory you are in, you can use the <strong>“pwd”</strong> command. It gives us the absolute path, which means the path that starts from the root. The root is the base of the Linux file system. It is denoted by a forward slash( / ). The user directory is usually something like "/home/username".</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/zY0aprE/zY0aprEyMtOxLhiyyRKWvY3vwB9cPJJQtxubemw6.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>2. ls </strong>— Use the <strong>"ls"</strong> command to know what files are in the directory you are in. You can see all the hidden files by using the command <strong>“ls -a”</strong>.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/NyJ4zSC/NyJ4zSCkkRu7x2IlvNeDpu9ea4Q7cWDxoB5vLJHk.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>3. cd</strong> — Use the <strong>"cd"</strong> command to go to a directory. For example, if you are in the home folder, and you want to go to the downloads folder, then you can type in <strong>“cd Downloads”</strong>. Remember, this command is case sensitive, and you have to type in the name of the folder exactly as it is. But there is a problem with these commands. Imagine you have a folder named “Raspberry Pi”. In this case, when you type in <strong>“cd Raspberry Pi”</strong>, the shell will take the second argument of the command as a different one, so you will get an error saying that the directory does not exist. Here, you can use a backward slash. That is, you can use <strong>“cd Raspberry\ Pi”</strong> in this case. Spaces are denoted like this: If you just type <strong>“cd”</strong> and press enter, it takes you to the home directory. To go back from a folder to the folder before that, you can type “<strong>cd</strong> ..” . The two dots represent back.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/WAhryqs/WAhryqsvfDeEeyrO2eKIfIvca4C3hSTrSzWXmTFW.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>4. mkdir &amp; rmdir </strong>— Use the <strong>mkdir</strong> command when you need to create a folder or a directory. For example, if you want to make a directory called “DIY”, then you can type <strong>“mkdir DIY</strong>”. Remember, as told before, if you want to create a directory named “DIY Hacking”, then you can type “mkdir <strong>DIY\ Hacking</strong>”. Use <strong>rmdir</strong> to delete a directory. But <strong>rmdir</strong> can only be used to delete an empty directory. To delete a directory containing files, use <strong>rm</strong>.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/fZHiKDk/fZHiKDkI6X950pnqyFDNLUuVvXnCGE3W2LqLjN3w.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>5. rm</strong> - Use the <strong>rm</strong> command to delete files and directories.  Use "<strong>rm -r</strong>" to delete just the directory. It deletes both the folder and the files it contains when using only the <strong>rm</strong> command.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/TVtSlJ0/TVtSlJ0xCOT0TrjQCxdlznSErV7s8ip5D1uQaO29.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>6. touch</strong> — The<strong> touch</strong> command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, “<strong>touch new.txt</strong>”.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/xQ2pP99/xQ2pP99oGhjN1fisLfllUSp3BYFne9Gt1hdBAvMX.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>7. man &amp; --help</strong> — To know more about a command and how to use it, use the <strong>man</strong> command. It shows the manual pages of the command. For example, “<strong>man cd</strong>” shows the manual pages of the <strong>cd </strong>command. Typing in the command name and the argument helps it show which ways the command can be used (e.g., <strong>cd –help</strong>).</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/Qxqv1yX/Qxqv1yXm9DdmwS11frqfVthgmSvGCBTwjf7YQ4kw.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>8. cp</strong> — Use the <strong>cp </strong>command to copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/r3Jci3Z/r3Jci3ZGSACziRezSh8vmHiATZ5rFqY8CtOcM4Aj.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>9. mv</strong> — Use the <strong>mv</strong> command to move files through the command line. We can also use the <strong>mv</strong> command to rename a file. For example, if we want to rename the file “<strong>text</strong>” to “<strong>new</strong>”, we can use “<strong>mv text new</strong>”. It takes the two arguments, just like the<strong> cp</strong> command.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/XfrXwxx/XfrXwxxdZUV66PCQdcFLDMkxRw58i6fLGrjjNbcV.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>10. locate</strong> — The <strong>locate</strong> command is used to locate a file in a Linux system, just like the search command in Windows. This command is useful when you don't know where a file is saved or the actual name of the file. Using the -i argument with the command helps to ignore the case (it doesn't matter if it is uppercase or lowercase). So, if you want a file that has the word “hello”, it gives the list of all the files in your Linux system containing the word "hello" when you type in “<strong>locate -i hello</strong>”. If you remember two words, you can separate them using an asterisk (*). For example, to locate a file containing the words "hello" and "this", you can use the command “<strong>locate -i *hello*this”.</strong></p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/OLS3n8S/OLS3n8S30SLUxjlxdmIhd0bHnTc2q12Cy0gudkcU.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>Intermediate Commands</strong></p><p><strong>1. echo </strong>— The "<strong>echo</strong>" command helps us move some data, usually text into a file. For example, if you want to create a new text file or add to an already made text file, you just need to type in, “<strong>echo hello, my name is alok &gt;&gt; new.txt</strong>”. You do not need to separate the spaces by using the backward slash here, because we put in two triangular brackets when we finish what we need to write.</p><p><strong>2. cat </strong>— Use the <strong>cat</strong> command to display the contents of a file. It is usually used to easily view programs.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/gVDvnvr/gVDvnvrg4mkmFfoOwfKi5S5QaOo6g71LfokySbUf.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>3. nano, vi, jed — nano</strong> and <strong>vi</strong> are already installed text editors in the Linux command line. The <strong>nano</strong> command is a good text editor that denotes keywords with color and can recognize most languages. And <strong>vi</strong> is simpler than <strong>nano</strong>. You can create a new file or modify a file using this editor. For example, if you need to make a new file named <strong>"check.txt</strong>", you can create it by using the command “<strong>nano check.txt</strong>”. You can save your files after editing by using the sequence Ctrl+X, then Y (or N for no). In my experience, using <strong>nano </strong>for HTML editing doesn't seem as good, because of its color, so I recommend <strong>jed </strong>text editor. We will come to installing packages soon.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/6ILW5l3/6ILW5l3cJbunDa4PoZbp3xVLI1FLVCICfs5xCLVZ.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>4. sudo</strong> — A widely used command in the Linux command line, <strong>sudo</strong> stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the <strong>sudo</strong> command. For example, if you want to edit a file like <strong>viz. alsa-base.conf</strong>, which needs root permissions, you can use the command – <strong>sudo nano alsa-base.conf</strong>. You can enter the root command line using the command “<strong>sudo bash</strong>”, then type in your user password. You can also use the command “<strong>su</strong>” to do this, but you need to set a root password before that. For that, you can use the command “<strong>sudo passwd</strong>”(not misspelled, it is <strong>passwd</strong>). Then type in the new root password.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/x87NGMW/x87NGMWw1Cx4b9pqDueExq1BCGRep9qhHTtTIKbF.jpeg" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>5. df </strong>— Use the <strong>df </strong>command to see the available disk space in each of the partitions in your system. You can just type in <strong>df</strong> in the command line and you can see each mounted partition and their used/available space in % and in KBs. If you want it shown in megabytes, you can use the command “<strong>df -m</strong>”.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/pWIgW4d/pWIgW4dtCD3Q4LGDzzL9zfZscTJRsiL3oXpstUn4.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>6. du</strong> — Use <strong>du</strong> to know the disk usage of a file in your system. If you want to know the disk usage for a particular folder or file in Linux, you can type in the command <strong>df</strong> and the name of the folder or file. For example, if you want to know the disk space used by the documents folder in Linux, you can use the command “<strong>du Documents</strong>”. You can also use the command “<strong>ls -lah</strong>” to view the file sizes of all the files in a folder.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/ShrGn4Z/ShrGn4Zdt1uUxAL8ZBEIBdJaB6IFem1fUNgZ9LAI.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>7. tar</strong> — Use <strong>tar</strong> to work with tarballs (or files compressed in a tarball archive) in the Linux command line. It has a long list of uses. It can be used to compress and uncompress different types of tar archives like <strong>.tar, .tar.gz, .tar.bz2</strong>,etc. It works on the basis of the arguments given to it. For example, "<strong>tar -cvf</strong>" for creating a <strong>.tar</strong> archive, -<strong>xvf</strong> to untar a tar archive, -<strong>tvf</strong> to list the contents of the archive, etc. Since it is a wide topic, here are some <a href="http://www.tecmint.com/18-tar-command-examples-in-linux/" target="_blank" rel="noopener noreferrer">examples of tar commands</a>.</p><p><strong>8. zip, unzip</strong> — Use <strong>zip</strong> to compress files into a zip archive, and <strong>unzip</strong> to extract files from a zip archive.</p><p><strong>9. uname</strong> — Use <strong>uname</strong> to show the information about the system your Linux distro is running. Using the command “<strong>uname -a</strong>” prints most of the information about the system. This prints the kernel release date, version, processor type, etc.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/zYTWmQm/zYTWmQmaCRIQVP81pRAyGpsQMlODoWfAiBmhGGfx.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>10. apt-get</strong> — Use <strong>apt</strong> to work with packages in the Linux command line. Use <strong>apt-get</strong> to install packages. This requires root privileges, so use the <strong>sudo</strong> command with it. For example, if you want to install the text editor <strong>jed</strong> (as I mentioned earlier), we can type in the command “<strong>sudo apt-get install jed</strong>”. Similarly, any packages can be installed like this. It is good to update your repository each time you try to install a new package. You can do that by typing “<strong>sudo apt-get update</strong>”. You can upgrade the system by typing “<strong>sudo apt-get upgrade</strong>”. We can also upgrade the distro by typing “<strong>sudo apt-get dist-upgrade</strong>”. The command “<strong>apt-cache search</strong>” is used to search for a package. If you want to search for one, you can type in “<strong>apt-cache search jed</strong>”(this doesn't require root).</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/kRl3J9p/kRl3J9prsTdwSLbn0a3Ib0PQ5bO2fQRXZN7Aqs4B.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>11. chmod</strong> — Use <strong>chmod</strong> to make a file executable and to change the permissions granted to it in Linux. Imagine you have a python code named <strong>numbers.py</strong> in your computer. You'll need to run “<strong>python numbers.py</strong>” every time you need to run it. Instead of that, when you make it executable, you'll just need to run “<strong>numbers.py</strong>” in the terminal to run the file. To make a file executable, you can use the command “<strong>chmod +x numbers.py</strong>” in this case. You can use “<strong>chmod 755 numbers.py</strong>” to give it root permissions or “<strong>sudo chmod +x numbers.py</strong>” for root executable. Here is some more <a href="http://www.computerhope.com/unix/uchmod.htm" target="_blank" rel="noopener noreferrer">information about the chmod command</a>.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/x6kPLV1/x6kPLV1X082T8Ndad9HXUcoUTfHqh3ZwdJeNMOWN.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>12. hostname</strong> — Use <strong>hostname</strong> to know your name in your host or network. Basically, it displays your hostname and IP address. Just typing “<strong>hostname</strong>” gives the output. Typing in “<strong>hostname -I</strong>” gives you your IP address in your network.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/rYXwfkj/rYXwfkjzSMxuSpV8CeNvMze4kqJNIpw1QVcOT6eY.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p><strong>13. ping</strong> — Use <strong>ping</strong> to check your connection to a server. Wikipedia says, "<strong>Ping</strong> is a computer network administration software utility used to test the reachability of a host on an Internet Protocol (IP) network". Simply, when you type in, for example, “<strong>ping google.com</strong>”, it checks if it can connect to the server and come back. It measures this round-trip time and gives you the details about it. The use of this command for simple users like us is to check your internet connection. If it pings the Google server (in this case), you can confirm that your internet connection is active!</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/bTyR2iO/bTyR2iOeEwWRqxaKg5KR00sANOT3M8VlKAzkiprJ.png" data-is-external-image="true" alt="" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><h3><i><strong>Tips and Tricks for Using Linux Command Line<br><br></strong></i></h3><ul><li>You can use the <strong>clear</strong> command to clear the terminal if it gets filled up with too many commands.</li><li><strong>TAB</strong> can be used to fill up in terminal. For example, You just need to type “<strong>cd Doc</strong>” and then <strong>TAB</strong> and the terminal fills the rest up and makes it “<strong>cd Documents</strong>”.</li><li><strong>Ctrl+C</strong> can be used to stop any command in terminal safely. If it doesn't stop with that, then <strong>Ctrl+Z</strong> can be used to force stop it.</li><li>You can exit from the terminal by using the <strong>exit</strong> command.</li><li>You can power off or reboot the computer by using the command <strong>sudo halt</strong> and <strong>sudo reboot</strong>.</li></ul></div></div></div><aside><ul class="post-tag"><li><a href="https://sakibulalikhan.github.io/blog/amp/tags/blog/">Blog</a></li><li><a href="https://sakibulalikhan.github.io/blog/amp/tags/linux-basics/">Linux Basics</a></li></ul><div class="post-share"><amp-social-share type="system" width="40" height="40" data-param-text="Learn basic commands for Linux"></amp-social-share><amp-social-share type="facebook" width="40" height="40" data-param-app_id="" data-param-text="Learn basic commands for Linux" data-param-href="https://sakibulalikhan.github.io/blog/amp/learn-basic-commands-for-linux.html"></amp-social-share><amp-social-share type="twitter" width="40" height="40" data-param-text="Learn basic commands for Linux" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-basic-commands-for-linux.html"></amp-social-share><amp-social-share type="pinterest" width="40" height="40" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-basic-commands-for-linux.html"></amp-social-share><amp-social-share type="tumblr" width="40" height="40" data-param-text="Learn basic commands for Linux" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-basic-commands-for-linux.html"></amp-social-share><amp-social-share type="whatsapp" width="40" height="40" data-param-text="Learn basic commands for Linux" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-basic-commands-for-linux.html"></amp-social-share></div></aside></div></article></main><amp-animation id="showAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "1",
+                            "visibility": "visible",
+                            "transform": "scale(1)"
+                        }]
+                    }]
+                }</script></amp-animation><amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "0",
+                            "visibility": "hidden",
+                            "transform": "scale(0.1)"
+                        }]
+                    }]
+                }</script></amp-animation><div class="post-scroll-marker"><amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer></div><button class="post-scroll" on="tap:top.scrollTo(duration=200)">&#8593;</button><footer class="bottom">COPYRIGHT © SAKIBUL ALI KHAN.</footer><amp-sidebar id="navbar-sidebar" layout="nodisplay"><ul><li><a href="https://sakibulalikhan.github.io/blog/amp/" title="https://sakibulalikhan.github.io/">Home</a></li><li><a href="https://sakibulalikhan.github.io/blog/amp/tags/blog/" title="https://sakibulalikhan.github.io/blog">Blog</a></li><li><a href="https://www.linkedin.com/in/sakibulalikhan/" title="https://sakibulalikhan.github.io/about-me">About Me</a></li></ul></amp-sidebar></body></html>

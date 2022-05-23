@@ -1,0 +1,582 @@
+<!doctype html><html amp lang="en-us"><head><meta charset="utf-8"><title>Learn intermediate commands for Linux - Sakibul Ali Khan</title><meta name="description" content="After you’ve gotten familiar with Linux and learned how to use some basic commands, you might be asking yourself where you can go from&hellip;"><link rel="canonical" href="https://sakibulalikhan.github.io/blog/learn-intermidiate-commands-for-linux.html"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" type="text/css"><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sakibulalikhan.github.io/blog/amp/learn-intermidiate-commands-for-linux.html"},"headline":"Learn intermediate commands for Linux","datePublished":"2021-11-16T23:00","dateModified":"2021-11-16T23:03","image":{"@type":"ImageObject","url":"https://sakibulalikhan.github.io/blog/media/posts/4/Linux-Termial.jpeg","height":300,"width":300},"description":"After you’ve gotten familiar with Linux and learned how to use some basic commands, you might be asking yourself where you can go from&hellip;","author":{"@type":"Person","name":"Sakibul Ali Khan","url":"https://sakibulalikhan.github.io/blog/amp/authors/sakibul-ali-khan/"},"publisher":{"@type":"Organization","name":"Sakibul Ali Khan"}}</script><style amp-custom>article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+amp-img {
+  max-width: 100%; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  background: #f1f1f1;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color:  #039be5;
+  text-decoration: none;
+  -webkit-transition: all 0.12s linear 0s;
+  -o-transition: all 0.12s linear 0s;
+  transition: all 0.12s linear 0s; }
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
+
+a:active {
+  color: #262626; }
+
+a:focus {
+  outline: 2px dotted #039be5; }
+
+figure,
+blockquote,
+p,
+ul,
+ol,
+dl,
+table,
+hr,
+fieldset {
+  margin-top: 1.6rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.13333rem; }
+
+h1 {
+  font-size: 1.67583rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4729rem; }
+
+h3 {
+  font-size: 1.29454rem; }
+
+h4 {
+  font-size: 1.13778rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.87891rem; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.8rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+  color: #6c7175;
+  font-family: "Droid Serif", "Times", "Source Serif Pro", serif;
+  font-style: italic;
+  padding: 1.33333rem 0.53333rem 1.33333rem 3.2rem;
+  position: relative; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 4.41226rem;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: rgba(108, 113, 117, 0.5); }
+  blockquote > :nth-child(1) {
+    margin-top: 0; }
+
+ul,
+ol {
+  margin-left: 2rem; }
+  ul > li,
+  ol > li {
+    list-style: inherit;
+    padding: 0 0 0.26667rem 0.26667rem; }
+
+dl dt {
+  color: #262626;
+  font-weight: 600; }
+
+code,
+pre {
+  background-color: #f1f1f1;
+  font-family: monospace; }
+
+pre {
+  margin: 1.6rem 0 0;
+  padding: 1.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto; }
+  pre > code {
+    color: #262626;
+    padding: 0; }
+
+code {
+  border-radius: 3px;
+  color: #262626;
+  padding: 0.26667rem 0.53333rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap; }
+  table th {
+    font-weight: 500;
+    padding: 0.53333rem 1.06667rem; }
+  table tr {
+    border-bottom: 1px solid #d4d4d4; }
+    table tr:nth-child(2n) {
+      background: #f1f1f1; }
+  table td {
+    padding: 0.53333rem 1.06667rem; }
+
+figcaption {
+  clear: both;
+  color: rgba(108, 113, 117, 0.6);
+  font-size: 0.82397rem;
+  margin: 0.8rem 0 0;
+  text-align: center; }
+
+sub,
+sup {
+  font-size: 65%; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.btn, [type=button],
+[type=submit],
+button {
+  background: #039be5;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.87891rem;
+  font-weight: 500;
+  line-height: 1.9;
+  padding: 0.53333rem 1.33333rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  width: auto; }
+  .btn:hover, [type=button]:hover,
+  [type=submit]:hover,
+  button:hover {
+    background: #262626;
+    color: #ffffff; }
+  .btn:focus, [type=button]:focus,
+  [type=submit]:focus,
+  button:focus {
+    outline: none; }
+  .btn-outline {
+    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #262626; }
+
+[type=button],
+[type=submit],
+button {
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.navbar {
+  background: #039be5;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3;
+  max-height: 4rem; }
+  .navbar > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navbar-sidebar-toggle {
+    left: 0;
+    position: relative;
+    text-indent: -99999rem; }
+    .navbar-sidebar-toggle:before {
+      content: "";
+      display: block;
+      border-top: 0.375rem double #ffffff;
+      border-bottom: 0.125rem solid #ffffff;
+      height: 0.125rem;
+      position: absolute;
+      text-indent: 0;
+      top: 50%;
+      width: 1.3rem;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
+
+.logo {
+            display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+            margin: 0 auto;
+            height: 2rem;
+            text-indent: -9999px;
+            width: 240px;vertical-align: middle;
+        }
+        .logo.logo-text {
+            line-height: 2;
+            text-align: center;
+            text-indent: 0;
+        }
+
+amp-sidebar {
+  background: #ffffff;
+  width: 240px; }
+  amp-sidebar > ul {
+    margin: 0.8rem 0 0;
+    padding: 0; }
+    amp-sidebar > ul ul {
+      border-left: 1px solid #d4d4d4;
+      margin: 0.53333rem 0 0; }
+    amp-sidebar > ul li {
+      color: #262626;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      padding: 0.42667rem 1.06667rem; }
+      amp-sidebar > ul li li {
+        font-weight: normal;
+        padding: 0.26667rem 0 0.26667rem 1.06667rem; }
+    amp-sidebar > ul a,
+    amp-sidebar > ul a:visited {
+      color: #262626; }
+
+.bg-white {
+  background: #ffffff; }
+
+.wrap-page {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media all and (max-width: 43.6875em) {
+  .wrap-inner {
+    padding: 0 6%; } }
+
+.page-title {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding: 1.6rem 6%; }
+  .page-title > h1 {
+    margin: 0;
+    font-size: 1.29454rem; }
+  .page-title > p {
+    font-size: 0.87891rem;
+    color: #6c7175;
+    line-height: 1.3;
+    margin: 0.26667rem 0 0; }
+  .page-title-author {
+    border-radius: 50%;
+    float: left;
+    height: 2.5rem;
+    width: 2.5rem; }
+    .page-title-author + h1 {
+      margin-left: 3.5rem; }
+      .page-title-author + h1 + p {
+        margin-left: 3.5rem; }
+
+.card {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.06667rem; }
+
+  .card-meta {
+    border-top: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-top: 1.06667rem;
+    text-transform: uppercase; }
+    .card-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .card-text {
+    font-size: 0.9375rem;
+    overflow: hidden;
+    padding: 0 6%; }
+    .card-text h2 {
+      font-size: 1.13778rem; }
+
+.post {
+  margin-bottom: 2.13333rem; }
+  .post-featured-image {
+    margin-top: 0;
+    position: relative; }
+    .post-featured-image > figcaption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0.8rem;
+      padding: 0 0.26667rem;
+      right: 6%; }
+  .post-header {
+    margin-bottom: 2.13333rem; }
+  .post-meta {
+    border-bottom: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-bottom: 1.06667rem;
+    text-transform: uppercase; }
+    .post-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .post-tag {
+    margin: 0; }
+    .post-tag > li {
+      display: inline-block;
+      padding: 0; }
+      .post-tag > li a {
+        background: #f1f1f1;
+        border-radius: 2px;
+        color: #6c7175;
+        font-size: 0.77248rem;
+        display: inline-block;
+        margin: 0 0.26667rem 0.26667rem 0;
+        padding: 0.26667rem 0.53333rem; }
+        .post-tag > li a:hover {
+          background: #039be5;
+          color: #ffffff;
+          text-decoration: none; }
+  .post-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    width: 100%; }
+    .post-share amp-social-share {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      background-size: 24px; }
+  .post-scroll {
+    color: #ffffff;
+    background: #039be5;
+    bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    font-size: 1.13778rem;
+    height: 46px;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    padding: 0;
+    right: 4%;
+    visibility: hidden;
+    width: 46px;
+    z-index: 9999; }
+    .post-scroll-marker {
+      height: 0px;
+      position: absolute;
+      top: 100px;
+      width: 0px; }
+        .post-pagination {
+    background: #f1f1f1;
+    -webkit-box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    border-top: 1px solid #d4d4d4;
+    padding: 1.06667rem 0; }
+    .post-pagination > div {
+      line-height: 1.2;
+      padding: 0.53333rem 1.06667rem;
+      text-align: center; }
+      .post-pagination > div span {
+        display: block;
+        color: #6c7175;
+        font-size: 0.7242rem;
+        font-weight: 500;
+        margin-bottom: 0.26667rem;
+        text-transform: uppercase; }
+    .post-pagination-prev a:before {
+      content: "\2190";
+      margin-right: 0.26667rem; }
+    .post-pagination-next a:after {
+      content: "\2192";
+      margin-left: 0.26667rem; }
+
+aside {
+  margin: 1.6rem 0 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-justify {
+  text-align: justify; }
+
+.msg {
+  border-left: 2px solid transparent;
+  padding: 1.06667rem 1.06667rem; }
+  .msg--highlight {
+    background-color: #fff8e6;
+    border-color: #e2ac4f; }
+  .msg--info {
+    background: rgba(45, 97, 201, 0.03);
+    border-color: #039be5; }
+  .msg--success {
+    background: #f7fbf6;
+    border-color: #5ab44b; }
+  .msg--warning {
+    background: #fff3f3;
+    border-color: #c06367;
+    color: #a94442; }
+
+.dropcap:first-letter {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.16943rem;
+  line-height: 0.7;
+  margin-right: 0.53333rem;
+  padding: 0.53333rem 0.53333rem 0.53333rem 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8rem 0; }
+  .pagination > a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+  .pagination-right {
+    margin-left: auto; }
+
+.bottom {
+  background: #039be5;
+  color: #ffffff;
+  padding: 1.06667rem 4%;
+  text-align: center; }</style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async></script><script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async></script></head><body class="bg-white"><nav class="navbar wrap-inner" id="top"><div><a on="tap:navbar-sidebar.toggle" class="navbar-sidebar-toggle" title="Menu">Menu</a> <a class="logo logo-text" href="https://sakibulalikhan.github.io/blog/amp/">Sakibul Ali Khan</a></div></nav><main class="wrap-page"><article class="post"><figure class="post-featured-image"><amp-img src="https://sakibulalikhan.github.io/blog/media/posts/4/Linux-Termial.jpeg" alt="Linux Terminal" srcset="https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-xs.jpeg 300w ,https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-sm.jpeg 480w ,https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-md.jpeg 768w" sizes="(max-width: 768px) 100vw, 768px" height="300" layout="responsive" width="300"></amp-img></figure><div class="wrap-inner"><header class="post-header"><h1>Learn intermediate commands for Linux</h1><p class="post-meta"><time datetime="2021-11-16T23:00">November 16, 2021</time></p></header><div id="project-details"><div class="content-area"><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><figure class="post__image"><amp-img src="https://sakibulalikhan.github.io/blog/media/posts/4/Linux-Termial-2.jpeg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-2-xs.jpeg 300w ,https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-2-sm.jpeg 480w ,https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-2-md.jpeg 768w ,https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-2-lg.jpeg 1024w ,https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-2-xl.jpeg 1360w ,https://sakibulalikhan.github.io/blog/media/posts/4/responsive/Linux-Termial-2-2xl.jpeg 1600w" alt="Linux Terminal" width="300" height="300" layout="responsive"></amp-img></figure><p>After you’ve gotten familiar with Linux and <a href="https://sakibulalikhan.github.io/learn-basic-commands-for-linux.html" target="_blank" rel="noopener noreferrer">learned how to use some basic commands</a>, you might be asking yourself where you can go from there. This article will cover a few more commands and programs that are often used when working with the Linux bash before introducing you to the concept of concatenating commands and redirecting their inputs and outputs which will allow you to work even more efficiently.</p><h2><i><strong>How to Copy Files Between Computers</strong></i></h2><h3><i><strong>Scp</strong></i></h3><p>scp stands for secure copy. As the name suggests, this program allows you to transfer files from a local machine to a remote computer and vice-versa. The following command copies a local file to a remote computer:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">scp &lt;local_file&gt; &lt;remote_user&gt;@&lt;remote_machine&gt;:&lt;remote_path&gt;</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>Use the following syntax to transfer a file from a remote computer to your machine:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">scp &lt;remote_user&gt;@&lt;remote_machine&gt;:&lt;remote_path&gt; &lt;local_path&gt;</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>This command is incredibly useful when working with developer boards like the Raspberry Pi or BeagleBone boards.</p><h3><i><strong>wget</strong></i></h3><p>You can use the wget command if you want to download a file from a server to your local computer:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/wC9JSAa/wC9JSAa4p58g04CEIkixdiCwnWBtP0MQ12AjNabv.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image1.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>The command will attempt to download the resource you supplied and it will automatically detect the file extension. For example: If you point it to a website, it’ll download an HTML file. If you’re transferring a large file, you can simply log out and the tool will finish the task in the background.</p><h2><i><strong>How to Use Process Management</strong></i></h2><h3><i><strong>ps / top</strong></i></h3><p>The ps / top commands allow you to list the processes running on your computer:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">ps -aux</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>Note that this will only generate a snapshot. You can, however, get a list that refreshes itself by using the top command:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/sZdcE7l/sZdcE7lnQtrecWkMntgEqZ5QBzDHn2gpbRtAYzlk.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image2.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><h3><i><strong>kill</strong></i></h3><p>The kill command can be used to end a running task. You may want to end a program that’s either not responding or that’s running in the background. Either way, you’ll have to find out the PID of the process (you can do that with ps or top):</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/3M4Tu2E/3M4Tu2ESQaGKgS6LJPbbHPZwEQnXSrQMshNhp9Rt.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image3.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><h3><i><strong>service</strong></i></h3><p>The service command can be used to manage services on your computer. It’s quite versatile in a way that you can start, stop, and restart a service as well as print details and a list of all available services on your computer. To print a list, use the following command:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">service --status-all</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>To print a detailed status of a particular service, use:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">service &lt;service_name&gt; status</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>For example:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/hybAUJp/hybAUJpGby3fMtXuPwqp7pKNAKuGVpoGSc8JRniM.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image4.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>As you can see, the service is currently running. That means we can stop or restart it. To restart it, type:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">sudo service bluetooth restart</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>To end the service, replace restart with stop.</p><h2><strong><i>How to Mounting and Unmount USB Drives</i></strong></h2><h3><i><strong>lsblk / fdisk</strong></i></h3><p>You can use the lsblk and fdisk commands to list block devices (lsblk) and to display and manipulate disk partitions (fdisk). Either one will work for this task.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/MWQQEUk/MWQQEUkVklpD2cp76aeVngYps2RN36xcuW5GsPkL.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image5.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>As you can see, I ran the command before and after inserting a USB drive. Next, take note of the partition you’d like to mount. In my case, that’s sda2.</p><h3><i><strong>mount</strong></i></h3><p>Use this command to mount the filesystem of an external drive in your local file system. This will allow you to work with the files on the storage device.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">sudo mount &lt;partition_to_mount&gt; &lt;local_mounting_point&gt;</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>For example:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">sudo mount /dev/sda2 /mnt</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>You can then access the files on the mounted partition by navigating to the /mnt folder.</p><h3><i><strong>Umount</strong></i></h3><p>After you’re done with the USB drive, you need to eject it. You can do that by using the unmount command together with the mounting point, you defined earlier.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">sudo umount &lt;local_mounting_point&gt;</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>These commands are just a small percentage of what the Linux bash has to offer. However, I find these to be particularly useful in everyday life, especially when working on a remote computer via SSH or a headless system.</p><h2><i><strong>How to Use Concatenating Commands</strong></i></h2><p>The true power of the Linux shell doesn’t come from using simple commands and programs. You can still get a lot done like that, but to work even more efficiently and fast, you can concatenate commands instead of waiting for one to finish before manually typing in the next one. Furthermore, you can filter or store the results in a file which can be handy in many ways.</p><h2><i><strong>How to Filter Results</strong></i></h2><p>Some commands, like ps or ls, can give you a very long list of results. Usually, you’re only interested in a particular entry or a set of entries (for example all .py files in a folder). A command, that allows you to search for specific characters in a string, is called <strong>grep</strong>. It will simply print all lines where the string you’ve searched for appears.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/21Jjx0j/21Jjx0jBulzq3CfgFDIHBti6AWF064bWtJJgzjfp.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image6.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>Now, you’ll only need to feed the output of a program, for example, echo or ls, into the grep command as an input and it’ll filter everything irrelevant. As you can see, the pipe operator is used to accomplish that. Let’s run ls as an example:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/KA8gGel/KA8gGels2LbkqfTsgxflOL5bT6CJkcUBEAfjXSeY.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image7.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>I’m only interested in the files that end with .py. To apply a filter, I feed the output of ls into grep with a fitting regular expression:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/FaR4p0z/FaR4p0zSGYVuEBCaBWJeL3uPtt3UBXZYZGpvBC17.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image8.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><h2><i><strong>How to Run a Program in the Background</strong></i></h2><p>Sometimes you’d like to execute a program that might take a while to complete but you don’t want to wait for it to finish. You can use an ampersand for that purpose.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">program &amp;</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>That will run in the program in the background. When it starts, the PID of the new process gets printed to the console and everything, the program outputs to stdout, will also get printed to the console.</p><h2><i><strong>How to Write to and Read From Files</strong></i></h2><p>The results of all programs that output to the stdout stream, can be written to other programs or files. For example, if I wanted to store the list of python scripts in a file, I could do so by typing:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">ls -l | grep <span class="hljs-string">".*.py$"</span> &gt; python-scripts.txt</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>This will create (or overwrite) a file called python-scripts.txt that contains the results of the ls command filtered by grep. If you don’t want to overwrite the contents of an existing file, you can use &gt;&gt; to append new text to it instead.</p><p>If you want to feed the contents of a file into a program, you can use the &lt; symbol.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/dd7dEoR/dd7dEoR4FAt6QJZFTtonCaiBIODcLiV7hJUlfpcT.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image9.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>These operators will write to the standard input stream and read from the standard output of a program respectively.</p><h2><i><strong>How to Run Multiple Commands at Once</strong></i></h2><p>Let’s suppose you want to run multiple commands that might take a while to finish. But you don’t want to sit at your computer and wait for them to finish just so that you can enter the next command. Luckily, you can enter a bunch of instructions at once and they’ll be executed one after another while you can enjoy a coffee break.</p><p>To accomplish that, write all commands in one line and separate them with semicolons:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/brAqGHI/brAqGHIl7wNYTzo7MyLzK8lQhnKV9CI7S8xoWQvP.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image10.jpg" layout="responsive"></amp-img></div></div></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>But what if a command fails? Or you only want to execute a command once you can be sure that its predecessor was successful? Those cases are also covered.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">A || B</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>This will run the command A and, if it fails, it will execute B. The following snippet does the exact opposite.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">A &amp;&amp; B</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>This means, that B will only get executed when A was successful. That way, you can string together quite complex commands that almost act like small applications themselves.</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><pre class="code"><code class="python hljs">find py-files.txt &amp;&amp; rm py-files.txt; touch py-files.txt &amp;&amp; ls -a | grep <span class="hljs-string">".*.py$"</span> &gt;&gt; py-files.txt &amp;&amp; echo <span class="hljs-string">"File created! The contents are:"</span> &amp;&amp; cat py-files.txt</code></pre></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><p>Which will produce the following output:</p></div></div></div><div class="container"><div class="columns"><div class="column is-8 is-offset-2"><div class="content-image"><div class="wrapper"><amp-img src="https://maker.pro/storage/r4iWAEw/r4iWAEwKp0IWf9NgV6oEaeFRVFdQfENV1XRFyfQy.jpeg" data-is-external-image="true" alt="intermediate_linux_commands_DH_MP_image11.jpg" layout="responsive"></amp-img></div></div></div></div></div></div></div><div class="container"> </div><div class="container mt-75px"><div class="columns"><div class="column is-8 is-offset-2"><div class="author"><div class="media"><figure class="media-left"></figure><div class="media-content"> </div></div></div></div></div></div><aside><ul class="post-tag"><li><a href="https://sakibulalikhan.github.io/blog/amp/tags/blog/">Blog</a></li><li><a href="https://sakibulalikhan.github.io/blog/amp/tags/linux-basics/">Linux Basics</a></li></ul><div class="post-share"><amp-social-share type="system" width="40" height="40" data-param-text="Learn intermediate commands for Linux"></amp-social-share><amp-social-share type="facebook" width="40" height="40" data-param-app_id="" data-param-text="Learn intermediate commands for Linux" data-param-href="https://sakibulalikhan.github.io/blog/amp/learn-intermidiate-commands-for-linux.html"></amp-social-share><amp-social-share type="twitter" width="40" height="40" data-param-text="Learn intermediate commands for Linux" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-intermidiate-commands-for-linux.html"></amp-social-share><amp-social-share type="pinterest" width="40" height="40" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-intermidiate-commands-for-linux.html"></amp-social-share><amp-social-share type="tumblr" width="40" height="40" data-param-text="Learn intermediate commands for Linux" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-intermidiate-commands-for-linux.html"></amp-social-share><amp-social-share type="whatsapp" width="40" height="40" data-param-text="Learn intermediate commands for Linux" data-param-url="https://sakibulalikhan.github.io/blog/amp/learn-intermidiate-commands-for-linux.html"></amp-social-share></div></aside></div></article></main><amp-animation id="showAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "1",
+                            "visibility": "visible",
+                            "transform": "scale(1)"
+                        }]
+                    }]
+                }</script></amp-animation><amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "0",
+                            "visibility": "hidden",
+                            "transform": "scale(0.1)"
+                        }]
+                    }]
+                }</script></amp-animation><div class="post-scroll-marker"><amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer></div><button class="post-scroll" on="tap:top.scrollTo(duration=200)">&#8593;</button><footer class="bottom">COPYRIGHT © SAKIBUL ALI KHAN.</footer><amp-sidebar id="navbar-sidebar" layout="nodisplay"><ul><li><a href="https://sakibulalikhan.github.io/blog/amp/" title="https://sakibulalikhan.github.io/">Home</a></li><li><a href="https://sakibulalikhan.github.io/blog/amp/tags/blog/" title="https://sakibulalikhan.github.io/blog">Blog</a></li><li><a href="https://www.linkedin.com/in/sakibulalikhan/" title="https://sakibulalikhan.github.io/about-me">About Me</a></li></ul></amp-sidebar></body></html>
