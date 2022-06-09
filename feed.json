@@ -23,8 +23,7 @@
                    "Sqli",
                    "SQL Injection",
                    "Pentesting",
-                   "Cyber security",
-                   "Blog"
+                   "Cyber security"
             ],
             "date_published": "2022-01-22T12:24:04+06:00",
             "date_modified": "2022-01-22T12:24:04+06:00"
@@ -62,8 +61,7 @@
                    "Search Engines",
                    "Pentesting",
                    "OSINT",
-                   "Cyber security",
-                   "Blog"
+                   "Cyber security"
             ],
             "date_published": "2022-01-12T13:19:23+06:00",
             "date_modified": "2022-01-12T13:30:49+06:00"
@@ -82,8 +80,7 @@
                    "Search Engines",
                    "Pentesting",
                    "OSINT",
-                   "Cyber security",
-                   "Blog"
+                   "Cyber security"
             ],
             "date_published": "2022-01-12T13:13:54+06:00",
             "date_modified": "2022-01-12T21:18:59+06:00"
@@ -100,8 +97,7 @@
             },
             "tags": [
                    "Linux  Privilege Escalation",
-                   "Linux",
-                   "Blog"
+                   "Linux"
             ],
             "date_published": "2022-01-10T21:26:38+06:00",
             "date_modified": "2022-01-10T21:26:38+06:00"
@@ -117,8 +113,7 @@
                 "name": "Sakibul Ali Khan"
             },
             "tags": [
-                   "Linux Basics",
-                   "Blog"
+                   "Linux Basics"
             ],
             "date_published": "2021-11-17T13:57:08+06:00",
             "date_modified": "2021-11-21T11:26:36+06:00"
@@ -134,8 +129,7 @@
                 "name": "Sakibul Ali Khan"
             },
             "tags": [
-                   "Linux Basics",
-                   "Blog"
+                   "Linux Basics"
             ],
             "date_published": "2021-11-16T23:00:55+06:00",
             "date_modified": "2021-11-16T23:03:51+06:00"
@@ -151,8 +145,7 @@
                 "name": "Sakibul Ali Khan"
             },
             "tags": [
-                   "Linux Basics",
-                   "Blog"
+                   "Linux Basics"
             ],
             "date_published": "2021-11-16T22:47:49+06:00",
             "date_modified": "2021-11-16T23:01:04+06:00"
@@ -168,8 +161,7 @@
                 "name": "Sakibul Ali Khan"
             },
             "tags": [
-                   "Windows Basics",
-                   "Blog"
+                   "Windows Basics"
             ],
             "date_published": "2021-11-16T22:14:31+06:00",
             "date_modified": "2021-11-16T23:02:14+06:00"
@@ -185,8 +177,7 @@
                 "name": "Sakibul Ali Khan"
             },
             "tags": [
-                   "Windows Basics",
-                   "Blog"
+                   "Windows Basics"
             ],
             "date_published": "2021-11-16T22:11:22+06:00",
             "date_modified": "2021-11-16T23:02:48+06:00"
