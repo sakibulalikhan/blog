@@ -3,12 +3,178 @@
     <title>Sakibul Ali Khan</title>
     <link href="https://sakibulalikhan.github.io/blog/feed.xml" rel="self" />
     <link href="https://sakibulalikhan.github.io/blog" />
-    <updated>2022-01-22T12:24:04+06:00</updated>
+    <updated>2022-07-15T20:41:50+06:00</updated>
     <author>
         <name>Sakibul Ali Khan</name>
     </author>
     <id>https://sakibulalikhan.github.io/blog</id>
 
+    <entry>
+        <title>Best sites with free challenges to practice your cyber skills</title>
+        <author>
+            <name>Sakibul Ali Khan</name>
+        </author>
+        <link href="https://sakibulalikhan.github.io/blog/best-sites-with-free-challenges-to-practice-your-cyber-skills.html"/>
+        <id>https://sakibulalikhan.github.io/blog/best-sites-with-free-challenges-to-practice-your-cyber-skills.html</id>
+
+        <updated>2022-07-15T20:41:50+06:00</updated>
+            <summary>
+                <![CDATA[
+                    Challenges Here there are some sites with free challenges to practice different skills. It could be useful for someone. CTFs CTFtime.org AWS Security&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div class="content-wrapper">
+<h1>Challenges</h1>
+<figure class="post__image"><img loading="lazy"  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.nfbkHDUqo2ZEfzTmk3AX1AHaB7%26pid%3DApi&amp;f=1" data-is-external-image="true"  alt="Cyber Challenge list" width="2735" height="709"></figure>
+<p><em>Here there are some sites with free challenges to practice different skills. It could be useful for someone.</em></p>
+<div id="outline-container-headline-1" class="outline-3">
+<h3 id="headline-1">CTFs</h3>
+<div id="outline-text-headline-1" class="outline-text-3">
+<ul>
+<li><a href="https://ctftime.org/">CTFtime.org</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-3">
+<h3 id="headline-2">AWS Security</h3>
+<div id="outline-text-headline-2" class="outline-text-3">
+<ul>
+<li><a href="http://flaws.cloud/">http://flaws.cloud/</a></li>
+<li><a href="http://flaws2.cloud/">http://flaws2.cloud/</a></li>
+<li><a href="https://github.com/RhinoSecurityLabs/cloudgoat">https://github.com/RhinoSecurityLabs/cloudgoat</a></li>
+<li><a href="https://github.com/nccgroup/sadcloud">https://github.com/nccgroup/sadcloud</a></li>
+<li><a href="https://github.com/BishopFox/iam-vulnerable">https://github.com/BishopFox/iam-vulnerable</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">Crypto</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<ul>
+<li><a href="https://cryptopals.com/">https://cryptopals.com/</a></li>
+<li><a href="https://cryptohack.org/">https://cryptohack.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">Docker</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<ul>
+<li><a href="https://notsosecure.com/vulnerable-docker-vm/">https://notsosecure.com/vulnerable-docker-vm/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">Exploiting</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<ul>
+<li><a href="http://pwnable.kr/">http://pwnable.kr/</a></li>
+<li><a href="http://exploit.education/">http://exploit.education/</a></li>
+<li><a href="https://ropemporium.com/">https://ropemporium.com/</a></li>
+<li><a href="https://github.com/shellphish/how2heap">https://github.com/shellphish/how2heap</a></li>
+<li><a href="https://pwn.college/">https://pwn.college/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">GCP Security</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<ul>
+<li><a href="https://thunder-ctf.cloud/">https://thunder-ctf.cloud/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-3">
+<h3 id="headline-7">Misc</h3>
+<div id="outline-text-headline-7" class="outline-text-3">
+<ul>
+<li><a href="https://overthewire.org/">https://overthewire.org/</a></li>
+<li><a href="https://www.root-me.org/">https://www.root-me.org/</a></li>
+<li><a href="https://ctflearn.com/">https://ctflearn.com/</a></li>
+<li><a href="https://ringzer0ctf.com/">https://ringzer0ctf.com/</a></li>
+<li><a href="https://tryhackme.com/">https://tryhackme.com/</a></li>
+<li><a href="https://w3challs.com/">https://w3challs.com/</a></li>
+<li><a href="http://gracker.org/">http://gracker.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-8" class="outline-3">
+<h3 id="headline-8">Powershell</h3>
+<div id="outline-text-headline-8" class="outline-text-3">
+<ul>
+<li><a href="https://www.underthewire.tech/">https://www.underthewire.tech</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-9" class="outline-3">
+<h3 id="headline-9">Programming</h3>
+<div id="outline-text-headline-9" class="outline-text-3">
+<ul>
+<li><a href="https://github.com/donnemartin/interactive-coding-challenges">https://github.com/donnemartin/interactive-coding-challenges</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-10" class="outline-3">
+<h3 id="headline-10">Pentest</h3>
+<div id="outline-text-headline-10" class="outline-text-3">
+<ul>
+<li><a href="https://www.hackthebox.eu/">https://www.hackthebox.eu/</a></li>
+<li><a href="https://www.vulnhub.com/">https://www.vulnhub.com/</a></li>
+<li><a href="https://www.cyberseclabs.co.uk/">https://www.cyberseclabs.co.uk/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-11" class="outline-3">
+<h3 id="headline-11">Reversing</h3>
+<div id="outline-text-headline-11" class="outline-text-3">
+<ul>
+<li><a href="https://challenges.re/">https://challenges.re/</a></li>
+<li><a href="https://github.com/ytisf/theZoo">https://github.com/ytisf/theZoo</a></li>
+<li><a href="http://reversing.kr/">http://reversing.kr/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-12" class="outline-3">
+<h3 id="headline-12">SysAdmin</h3>
+<div id="outline-text-headline-12" class="outline-text-3">
+<ul>
+<li><a href="https://github.com/trimstray/test-your-sysadmin-skills">https://github.com/trimstray/test-your-sysadmin-skills</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-13" class="outline-3">
+<h3 id="headline-13">Web</h3>
+<div id="outline-text-headline-13" class="outline-text-3">
+<ul>
+<li><a href="https://portswigger.net/web-security">https://portswigger.net/web-security</a></li>
+<li><a href="https://ctfchallenge.co.uk/">https://ctfchallenge.co.uk</a></li>
+<li><a href="https://pentesterlab.com/exercises">https://pentesterlab.com/exercises</a></li>
+<li><a href="https://ctf.hacker101.com/">https://ctf.hacker101.com/</a></li>
+<li><a href="https://xss-game.appspot.com/">https://xss-game.appspot.com/</a></li>
+<li><a href="http://www.dvwa.co.uk/">http://www.dvwa.co.uk/</a></li>
+<li><a href="https://google-gruyere.appspot.com/">https://google-gruyere.appspot.com/</a></li>
+<li><a href="https://xss.pwnfunction.com/">https://xss.pwnfunction.com/</a></li>
+<li><a href="https://github.com/tegal1337/0l4bs">https://github.com/tegal1337/0l4bs</a></li>
+<li><a href="https://application.security/free-application-security-training">https://application.security/free-application-security-training</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-14" class="outline-3">
+<h3 id="headline-14">More</h3>
+<div id="outline-text-headline-14" class="outline-text-3">
+<ul>
+<li><a href="https://github.com/mikeprivette/awesome-sec-challenges">https://github.com/mikeprivette/awesome-sec-challenges</a></li>
+<li><a href="https://github.com/apsdehal/awesome-ctf#wargames">https://github.com/apsdehal/awesome-ctf#wargames</a></li>
+</ul>
+</div>
+</div>
+<ul id="main-list"></ul>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>SQL injection cheat sheet</title>
         <author>
@@ -1940,72 +2106,6 @@ wc - wc counts characters, lines, and words.</code></pre>
 <p><strong>12. ipconfig /all:</strong> it will show all about network configuration in the system.</p>
 <p><strong>13. wmic:</strong> It provides a command-line interface for Windows Management Instrumentation (WMI).</p>
 <p><strong>14 net:</strong> This command is used to perform operations on users, groups, domains, etc.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Windows file system and basic commands</title>
-        <author>
-            <name>Sakibul Ali Khan</name>
-        </author>
-        <link href="https://sakibulalikhan.github.io/blog/windows-file-system-and-basic-commands.html"/>
-        <id>https://sakibulalikhan.github.io/blog/windows-file-system-and-basic-commands.html</id>
-            <category term="Windows Basics"/>
-
-        <updated>2021-11-16T23:02:48+06:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://sakibulalikhan.github.io/blog/media/posts/1/windowsfile.png" alt="windows file" />
-                    Windows directory, Registry, and basic commands Introduction In this blog post we will learn windows system and basic commands and how to navigate&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <img src="https://sakibulalikhan.github.io/blog/media/posts/1/windowsfile.png" alt="windows file" />
-                <h2><figure class="post__image"><img loading="lazy"  src="https://sakibulalikhan.github.io/blog/media/posts/1/windowsfile-2.png" sizes="(max-width: 48em) 100vw, 768px" srcset="https://sakibulalikhan.github.io/blog/media/posts/1/responsive/windowsfile-2-xs.png 300w ,https://sakibulalikhan.github.io/blog/media/posts/1/responsive/windowsfile-2-sm.png 480w ,https://sakibulalikhan.github.io/blog/media/posts/1/responsive/windowsfile-2-md.png 768w ,https://sakibulalikhan.github.io/blog/media/posts/1/responsive/windowsfile-2-lg.png 1024w ,https://sakibulalikhan.github.io/blog/media/posts/1/responsive/windowsfile-2-xl.png 1360w ,https://sakibulalikhan.github.io/blog/media/posts/1/responsive/windowsfile-2-2xl.png 1600w"  alt="Windows File Manager" width="1920" height="1080"></figure></h2>
-<h2 id="windows-directory-registry-and-basic-commands">Windows directory, Registry, and basic commands</h2>
-<h2 id="introduction">Introduction</h2>
-<p><em><strong>In this blog post we will learn windows system and basic commands and how to navigate and interact with them using windows command terminal.</strong></em></p>
-<p>I hope everyone is familiar with windows and how to use it using GUI, now we will also learn its command-line usage.</p>
-<p>Windows highest directory or root directory is specified as drive:\ but usually its c:\, ‘' is the directory separator in windows link ‘/’ in Linux but we can use both in windows command line</p>
-<p><em><strong>Following are the useful directories of windows root directory:</strong></em></p>
-<ul>
-<li>
-<p><strong>\perflogs:</strong> May hold Windows performance logs, but on a default configuration, it is empty.</p>
-</li>
-<li>
-<p><strong>\Program Files:</strong> All programs are installed in this folder based on system architecture(x86\x64).</p>
-</li>
-<li>
-<p><strong>\Program Files (x86):</strong> In 64-bit architecture all 32-bit programs are installed in this folder.</p>
-</li>
-<li>
-<p><strong>\Users:</strong> This folder contains one subfolder for each user that has logged onto the system at least once</p>
-</li>
-<li>
-<p><strong>\Public:</strong> This folder serves as a buffer for users of a computer to share files. By default, this folder is accessible to all users that can log on to the computer.</p>
-</li>
-<li>
-<p><strong>\System, \System32, \SysWOW64:</strong> These folders store dynamic-link library (DLL) files that implement the core features of Windows and Windows API. Any time a program asks Windows to load a DLL file and do not specify a path, these folders are searched after the program’s folder is searched.</p>
-</li>
-</ul>
-<h2 id="windows-registry">Windows Registry</h2>
-<p>The Registry is a database used to store settings and options for the windows systems. It contains information and settings for all the hardware, software, users, and preferences of the PC. Whenever a user makes changes to a Control Panel settings, or File Associations, System Policies, or installed software, the changes are reflected and stored in the Registry.</p>
-<p><a href="https://www.akadia.com/services/windows_registry_tutorial.html" target="_blank" rel="noopener noreferrer">click here to know more about registry</a></p>
-<h2 id="windows-basic-navigation-commands">Windows basic navigation commands</h2>
-<p><strong>cd/chdir:</strong> change directory.</p>
-<p><strong>copy:</strong> This command copies a specified file to a given location.</p>
-<p><strong>del/erase:</strong> deletes a file or number of files.</p>
-<p><strong>dir:</strong> this displays the current files and folder directly accessible from either the current directory or the directory specified after the command.</p>
-<p><strong>find:</strong> searches a specific file for a given string. ex find “hacker” hacker.txt</p>
-<p><strong>md/mkdir:</strong> This command creates a new directory.</p>
-<p><strong>move:</strong> Move is a copy/paste command that moves a file from one location to another.</p>
-<p><strong>popd/pushd:</strong> Allows the user to quickly switch between file paths.</p>
-<p><strong>ren/rename:</strong> This command is used to rename directories.</p>
-<p><strong>rd/rmdir:</strong> This allows the user to remove a directory.</p>
-<p><strong>start:</strong> Allows the user to start a program (so long as the program is an executable, batch or command file).</p>
-<p><strong>tree:</strong> Displays a graphical file tree of the specified file path, or the current drive if no path is specified.</p>
-<p><strong>more/type:</strong> To view file as a text in commandline, we can also use it to edit or append text like cat. ex. more &gt; hacker.txt, more » hacker.txt, type &gt; hacker.txt, type » hacker.txt.</p>
             ]]>
         </content>
     </entry>
